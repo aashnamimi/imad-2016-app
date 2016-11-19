@@ -14,6 +14,8 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 
+<input type="button" onclick="location.href='http://google.com';" value="Go to Google" />
+
   
   
   app.get('/ui/madi.png', function (req, res) {
