@@ -2,32 +2,13 @@
 <html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
-        
-        <style type="text/css">
-    	ul {
-    		width: 400px;
-    		margin: 100px auto;
-    	}
-    	li {
-    		width: 70px;
-    		height: 70px;
-    		float: left;
-    		margin-right: 8px;
-    		border: 1px solid #cccccc;
-    		list-style: none;
-    	}
-    	.red {
-    		background-color: #ff2222;
-    	}
-    	.pink {
-    		background-color: #2222ff;
-    	}
-    </style>
+       
     </head>
     
     <body>
         <div class="center">
             <img src="/ui/madi.png" class="img-medium"/>
+             <img src="/ui/coffeebeans.png" class="img-medium"/>
         </div>
         <br>
         <div class="center text-big bold">
@@ -37,28 +18,8 @@
         </script>
         
         
-        <ul>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-	</ul>
         
-        <script type="text/javascript">
-		$( document ).ready(function() {
-			var count = 0;
-	
-			function tick() {
-				var position = count % 5;
-				$( 'li' ).removeClass('red');
-				$( 'li:nth-child(' + ( position + 1 ) + ')' ).addClass('red');
-				count++;
-				setTimeout(function(){ tick(); }, 1000);
-			}
+        
 
-			tick();
-		});
-	</script>
     </body>
 </html>
