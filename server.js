@@ -13,9 +13,14 @@ app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
-
-<input type="button" onclick="location.href='http://google.com';" value="Go to Google" />
-
+function add() {
+    var element = document.createElement("input");
+    element.setAttribute("type", "button");
+    element.setAttribute("value", "invert");
+    element.setAttribute("name", "button3");
+    element.setAttribute("onclick", "foo()");
+    document.flotta.appendChild(element);
+}
   
   
   app.get('/ui/madi.png', function (req, res) {
