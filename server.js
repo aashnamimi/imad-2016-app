@@ -20,6 +20,10 @@ function add() {
     element.setAttribute("name", "button3");
     element.setAttribute("onclick", "foo()");
     document.flotta.appendChild(element);
+    addPanel.setLayout(new BorderLayout());
+addPanel.add(addButton,BorderLayout.SOUTH);
+bottomLeft.setLayout(new GridLayout(1,3,200,0));
+bottomLeft.add(addPanel);
 }
   
   
